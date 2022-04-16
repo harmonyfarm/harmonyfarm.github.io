@@ -132,7 +132,7 @@ header .sp-menu #open {
   color: rgb(99, 47, 37);
   position: fixed;
   top: 20px;
-  right: 16px;
+  right: 40px;
   /* background: #d8c5b8; */
 }
 
@@ -212,6 +212,16 @@ header .sp-menu #open {
   color:rgb(99, 47, 37);
   font-size: 24px;
 }
+
+i.bi-instagram {
+  font-size: 20px;
+  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
+  overflow: hidden;/*はみ出た部分を隠す*/
+  border-radius: 16px;/*角丸に*/
+  opacity: .8;
+}
+
 
 /* hero */
 
@@ -511,6 +521,23 @@ li.step_dots li:nth-child(5) {
 .products {
   padding: 64px 0;
   /* background: #eee; */
+}
+
+.products h2, p {
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  width: 160px;
+  background: #fcab95;
+  /* color: #fff; */
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 30px;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-bottom: 26px;
 }
 
 .products ul {
