@@ -523,7 +523,7 @@ li.step_dots li:nth-child(5) {
   /* background: #eee; */
 }
 
-.products h2, p {
+.products h2, .products p {
   text-align: center;
 }
 
