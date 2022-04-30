@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harmony Farm - Okinawa Coffee Farm</title>
+  <title>Harmony Farm | 沖縄ヤンバルにあるコーヒー農園</title>
   <meta name=”description” content=”沖縄県やんばる東村にあるコーヒー農園です。国産100％コーヒーを栽培から精製、焙煎まで農園で手掛け、新鮮で美味しいコーヒーを飲んで頂けるように日々奮闘中です。現在、数量限定・期間限定のコーヒーを絶賛発売中です。”>
   <link rel="icon" href="img/favicon.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <meta name="google-site-verification" content="xAnr-OaK92aHxP8iOx6iqhhN90snGKomEJdBXPXYb68" />
 </head>
 <body>
-  <div class="header_hero bg_color">
+  <div class="header_hero">
     <header id="header">
       <div class="container">
         <div class="logo">
@@ -53,181 +54,165 @@
     </header>
   
     <section class="hero">
-      <div class="container" id="hero_title">
-          <img src="img/logo_onpu.png" alt="音符ロゴ">   
-          <h1>Harmony Farm</h1>
+      <div id="hero_title">
+        <h1>Harmony Farm</h1>
+        <h2>Okinawa Coffee Farm</h2>
+        <p>沖縄ヤンバルから
+          <br>
+          新鮮なコーヒーをお届けします。</p>
       </div>
-      <p>Okinawa Coffee Farm</p>
+      <img src="img/logo_onpu.png" alt="Harmony Farm onpu logo">
     </section>
+    
   </div>
 
-
   <section class="features bg_color">
-    <h1>数量限定の優しいコーヒー</h1>
     <div class="container">
-      <section>
-        <div class="pic">
-          <img src="img/features1.jpg" alt="手のひらいっぱいの豆">
-        </div>
-        <div class="desc">
-          <h2>少しでも体に良いものを</h2>
-          <p>コーヒー好きの母の為に、少しでも体に良いものを飲んでほしいという想いから、父が約12年前に始めました。</p>
-          <p>主に鶏糞・牛糞などの有機肥料を使用し、手間暇かけて育てています。</p>
-        </div>
-      </section>
-      <section>
-        <div class="pic">
-          <img src="img/features2.jpg" alt="ハウス栽培の写真">
-        </div>
-        <div class="desc">
-          <h2>数量・期間限定の国産コーヒー</h2>
-          <p>毎年約500本の木から採れる数量限定の国産100％コーヒーです。</p>
-          <p>沖縄では収穫時期が限られていることから、販売期間も４月～６月までの限定です。</p>         
-        </div>
-      </section>
+      <h1>毎年約500本の木から採れる数量限定の国産100％コーヒーです。</h1>
+      <p>
+        沖縄県やんばる東村にあるコーヒー農園で、
+        <br>
+       栽培から精製、焙煎までを手掛けています。
+      </p>
+      <p>
+        沖縄では収穫時期が限られていることから、
+        <br>
+      販売期間も４月～６月までの限定です。
+      </p> 
+      <p>
+        主に鶏糞・牛糞などの有機肥料を使用し、
+        <br>
+        手間暇かけて育てていますので、
+        <br>
+        外国産のコーヒーに比べるとお高いけど、、
+      </p>  
+      <p>貴重な国産コーヒーをぜひお試しください。</p>
     </div>
   </section>
 
+  <section class="steps bg_color" id="flows">
+    <h1>ハーモニーファームで<br>コーヒーができるまで</h1>
+    <div class="container">
+
+      <section class="step_outer">
+        <div class="pic">
+          <img src="img/steps/step1.jpg" alt="coffee_step_1">
+        </div>
+        <div class="desc">
+          <h2>Step1</h2>
+          <p>完熟した実を手摘みで収穫して水で洗います。</p>
+          <p>水に浮いた実は丁寧に取り除きます。</p>
+        </div>
+      </section>
+
+      <section class="step_outer">
+        <div class="pic">
+          <img src="img/steps/step2.jpg" alt="coffee_step_2">
+        </div>
+        <div class="desc">
+          <h2>Step2</h2>
+          <p>豆と果肉を分けます。</p>
+          <p>果肉を除去した後は風通しの良い所で3週間～1か月程天日乾燥させます。</p>
+        </div>
+      </section>
+
+      <section class="process">
+        <p style="text-align: center; padding-bottom: 15px;">
+          ハーモニーファームでは二つの方法でコーヒーを精製しています。
+        </p>
+        <section class="inner">
+          <div class="pic">
+            <img src="img/steps/washed.png" alt="washed">
+          </div>
+          <div class="inner_desc">
+            <h3>ウォッシュドプロセス</h3>
+            <p>２日～３日水に漬けて種子に付いた果肉層（ミューシレージ）を取り除き、綺麗に洗い流した後、天日乾燥します。</p>
+          </div>
+        </section>
+        <section class="inner">
+          <div class="pic">
+            <img src="img/steps/hanii.png" alt="hanii">
+          </div>
+          <div class="inner_desc">
+            <h3>ハニープロセス</h3>
+            <p>果肉層（ミューシレージ）を取り除かずそのまま天日乾燥します。</p>
+          </div>
+        </section>
+      </section>
+
+
+      <section class="step_outer">
+        <div class="pic">
+          <img src="img/steps/step3.jpg" alt="coffee_step_3">
+        </div>
+        <div class="desc">
+          <h2>Step3</h2>
+          <p>風通しの良い所で３週間～1か月程乾燥させます。</p>
+          <p>乾燥が終わった豆にはパーチメントと呼ばれる薄い殻が付いているので脱穀機で取り除きます。</p>
+          <p>脱穀した豆を『生豆』と言います。</p>
+        </div>
+      </section>
+
+      <section class="step_outer">
+        <div class="pic">
+          <img src="img/steps/step4.jpg" alt="coffee_step_4">
+        </div>
+        <div class="desc">
+          <h2>Step4</h2>
+          <p>割れたり欠けたりした欠点豆を手作業で取り除きます。</p>
+          <p>その後、焙煎すると普段見慣れたコーヒー豆になります。</p>
+          <p>収穫してから焙煎できる状態になるまでに２～３か月くらいかかります。</p>
+        </div>
+      </section>
+      <section class="step_outer">
+        <div class="pic">
+          <img src="img/steps/step5.jpg" alt="coffee_step_5">
+        </div>
+        <div class="desc">
+          <h2>コーヒーの出来上がりです。</h2>
+          <p>手作業で丁寧に栽培から精製、焙煎したコーヒーの完成です。</p>
+        </div>
+      </section>
+  </section>
+  
   <section class="products bg_color" id="products">
     <h1>商品紹介</h1>
     <div class="container">
       <a href="https://harmonyfarm.base.ec/" class="btn" target="_blank">
         <p>商品購入ページへ</p>
       </a>
+
+      <p>焙煎したての新鮮なコーヒーをお届けします。</p>
       <ul>
         <li>
-          <a href="https://harmonyfarm.base.ec/items/61225105">
-            <img src="img/nama.jpg" alt="生豆で購入">
-            <h2>生豆で購入</h2>
-            <p>4,000円（100g）</p>
+          <a href="https://harmonyfarm.base.ec/items/61640348" target="_blank">
+            <img src="img/drip-pack-2.jpg" alt="ドリップバッグ2個セット">
+            <h2>ドリップバッグ２個セット</h2>
+            <p>1,300円（２杯分）</p>
           </a>
         </li>
         <li>
-          <a href="https://harmonyfarm.base.ec/items/61224468">
-            <img src="img/baisen.jpg" alt="焙煎後の豆で購入">
+          <a href="https://harmonyfarm.base.ec/items/61222885" target="_blank">
+            <img src="img/drip-pack-5.jpg" alt="ドリップバッグ5個セット">
+            <h2>ドリップバッグ５個セット</h2>
+            <p>3,250円（５杯分）</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://harmonyfarm.base.ec/items/61224468" target="_blank">
+            <img src="img/baisen-pack.jpg" alt="焙煎後の豆で購入">
             <h2>焙煎後の豆で購入</h2>
             <p>3,000円（約５杯分）</p>
           </a>
         </li>
         <li>
-          <a href="https://harmonyfarm.base.ec/items/61222885">
-            <img src="img/drip.jpg" alt="ドリップで購入">
-            <h2>ドリップで購入</h2>
-            <p>3,250円（約５杯分）</p>
+          <a href="https://harmonyfarm.base.ec/items/61225105" target="_blank">
+            <img src="img/nama-pack.jpg" alt="生豆で購入">
+            <h2>生豆で購入</h2>
+            <p>4,000円（100g）</p>
           </a>
         </li>
       </ul>
-    </div>
-  </section>
-
-  <section class="steps bg_color" id="flows">
-    <h1>コーヒーができるまで</h1>
-    <div class="container">
-      <section>
-        <ul>
-          <li>
-            <div class="step_col">
-              <img src="img/steps/step1.png" alt="step1">
-              <div class="step_desc">
-                <!-- <p>Step 1</p> -->
-                <p>完熟した実を手摘みで収穫して水で洗います。水に浮いた実は丁寧に取り除きます。</p>
-                <div class="desc">
-                  <p>コーヒーの種類（推定）</p>
-                  <ul>
-                    <li>ムンドノーボ</li>
-                    <li>イエローブルボン</li>
-                  </ul>
-                  <p>※収穫時期: 11月～3月ごろ</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="step_dots">
-            <ul>
-              <li><i class="bi bi-dot"></i></li>
-              <li><i class="bi bi-dot"></i></li>
-              <li><i class="bi bi-dot"></i></li>
-              <li><i class="bi bi-dot"></i></li>
-              <li><i class="bi bi-caret-down-fill"></i></li>
-            </ul>
-          </li>
-          <li>
-            <div class="step_col">
-              <img src="img/steps/step2.png" alt="step2">
-              <div class="step_desc">
-                <!-- <p>Step 2</p> -->
-                <p>豆と果肉を分けます。果肉を除去した後は風通しの良い所で3週間～1か月程天日乾燥させます。ハーモニーファームでは二つの方法でコーヒーを精製しています。</p>
-                <div class="step_inner">
-                  <div class="step_inner2">
-                    <img src="img/steps/washed.png" alt="washed">
-                    <p>ウォッシュド</p>
-                    <p class="img_cap">２日～３日水に漬けて種子に付いた果肉層（ミューシレージ）を取り除き、綺麗に洗い流した後、天日乾燥します。</p>
-                  </div>
-                  <div class="step_inner2">
-                    <img src="img/steps/hanii.png" alt="hanii">
-                    <p>ハニー</p>
-                    <p class="img_cap">果肉層（ミューシレージ）を取り除かずそのまま天日乾燥します。</p>
-                  </div>            
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="step_dots">
-            <ul>
-              <li><i class="bi bi-dot"></i></li>
-              <li><i class="bi bi-dot"></i></li>
-              <li><i class="bi bi-dot"></i></li>
-              <li><i class="bi bi-dot"></i></li>
-              <li><i class="bi bi-caret-down-fill"></i></li>
-            </ul>
-          </li>
-          <li>
-            <div class="step_col">
-              <img src="img/steps/step3.png" alt="step3">
-              <div class="step_desc">
-                <!-- <p>Step 3</p> -->
-                <p>風通しの良い所で３週間～1か月程乾燥させます。乾燥が終わった豆にはパーチメントと呼ばれる薄い殻が付いているので脱穀機で取り除きます。脱穀した豆を『生豆』と言います。</p>
-              </div>
-            </div>
-          </li>
-          <li class="step_dots">
-            <ul>
-              <li><i class="bi bi-dot"></i></li>
-              <li><i class="bi bi-dot"></i></li>
-              <li><i class="bi bi-dot"></i></li>
-              <li><i class="bi bi-dot"></i></li>
-              <li><i class="bi bi-caret-down-fill"></i></li>
-            </ul>
-          </li>
-          <li>
-            <div class="step_col">
-              <img src="img/steps/step4.png" alt="step4">
-              <div class="step_desc">
-                <!-- <p>Step 4</p> -->
-                <p>割れたり欠けたりした欠点豆を手作業で取り除きます。その後、焙煎すると普段見慣れたコーヒー豆になります。収穫してから焙煎できる状態になるまでに２～３か月くらいかかります。</p>
-              </div>
-            </div>
-          </li>
-          <li class="step_dots">
-            <ul>
-              <li><i class="bi bi-dot"></i></li>
-              <li><i class="bi bi-dot"></i></li>
-              <li><i class="bi bi-dot"></i></li>
-              <li><i class="bi bi-dot"></i></li>
-              <li><i class="bi bi-caret-down-fill"></i></li>
-            </ul>
-          </li>
-          <li>
-            <div class="step_col">
-              <img src="img/steps/step5.png" alt="step5">
-              <div class="step_desc">
-                <!-- <p>Step 4</p> -->
-                <p>コーヒーの出来上がりです。</p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </section>
     </div>
   </section>
 
@@ -235,14 +220,18 @@
     <h1>About</h1>
     <div class="container">
       <section>
-        <p>2008年に沖縄県国頭郡東村川田でコーヒー栽培を始めました。遮光ネットを張ったハウスで、約500本のコーヒーの木を栽培しています。</p>
-        <!-- <div class="desc">
-          <h3>コーヒーの種類（推定）</h3>
-          <ul>
-            <li>ムンドノーボ</li>
-            <li>イエローブルボン</li>
-          </ul>
-        </div> -->
+        <p>2008年にコーヒー好きの母の為に、<br>
+          少しでも体に良いものを飲んでほしいという想いから、<br>
+          義父が約12年前に趣味で始めたコーヒー栽培。</p>
+        <p>試行錯誤を繰り返し、<br>
+          コーヒーの木も約500本に増えたので、<br>
+          それを嫁が継ぎ、コーヒー販売始めました。</p>
+        <ul>
+          <li>場所：沖縄県国頭郡東村川田</li>
+          <li>栽培方法：遮光ネットを張ったハウス</li>
+          <li>コーヒーの種類（推定）：ムンドノーボ／イエローブルボン</li>
+        </ul>  
+
       </section>
       <section>
         <div class="pic">
@@ -259,30 +248,44 @@
     <h1>Gallary</h1>
     <div class="container">
       <ul>
-        <li><img src="img/gallary/IMG_7218.JPG" alt="gallay画像"></li>
-        <li><img src="img/gallary/IMG_7222.JPG" alt="gallay画像"></li>
-        <li><img src="img/gallary/IMG_7223.JPG" alt="gallay画像"></li>
-        <li><img src="img/gallary/S__3407904.jpg" alt="gallay画像"></li>
-        <li><img src="img/gallary/S__3407905.jpg" alt="gallay画像"></li>
-        <li><img src="img/gallary/S__3407907.jpg" alt="gallay画像"></li>
-        <li><img src="img/gallary/S__3407909.jpg" alt="gallay画像"></li>
-        <li><img src="img/gallary/S__3407911.jpg" alt="gallay画像"></li>
-        <li><img src="img/gallary/S__3407915.jpg" alt="gallay画像"></li>
-        <li><img src="img/gallary/S__3407916.jpg" alt="gallay画像"></li>
-        <li><img src="img/gallary/S__3498001.jpg" alt="gallay画像"></li>
+        <li><img src="img/gallary/gallary_1.jpg" alt="gallay画像"></li>
+        <li><img src="img/gallary/gallary_2.jpg" alt="gallay画像"></li>
+        <li><img src="img/gallary/gallary_3.jpg" alt="gallay画像"></li>
+        <li><img src="img/gallary/gallary_4.jpg" alt="gallay画像"></li>
+        <li><img src="img/gallary/gallary_5.jpg" alt="gallay画像"></li>
+        <li><img src="img/gallary/gallary_6.jpg" alt="gallay画像"></li>
+        <li><img src="img/gallary/gallary_7.jpg" alt="gallay画像"></li>
+        <li><img src="img/gallary/gallary_8.jpg" alt="gallay画像"></li>
+        <li><img src="img/gallary/gallary_9.jpg" alt="gallay画像"></li>
+        <li><img src="img/gallary/gallary_10.jpg" alt="gallay画像"></li>
+        <li><img src="img/gallary/gallary_11.jpg" alt="gallay画像"></li>
       </ul>
     </div>
   </section>
 
-  <section class="contact bg_color" id="contact">
+  <section class="call-to-action bg_color">
+    <h1>数量・期間限定の優しいコーヒーをぜひお試しください。</h1>
+    <div class="container">
+      <section>
+        <a href="https://harmonyfarm.base.ec/" target="_blank">
+          <img src="img/logo_cup.png" alt="logo_cup">
+          <p>商品一覧ページへ</p>
+        </a>
+      </section>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
     <h1>Contact</h1>
     <div class="container">
       <ul>
         <li>比嘉 江利子</li>
         <li>HarmonyFarm.higa@gmail.com</li>
         <li>090-9075-4981</li>
-        <li>畑の場所: 沖縄県国頭郡東村川田</li>
       </ul>
+      <a href="https://thebase.in/inquiry/harmonyfarm-base-ec" class="btn" target="_blank">
+        <p>お問い合わせフォームへ</p>
+      </a>
     </div>
   </section>
 

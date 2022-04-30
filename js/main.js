@@ -29,4 +29,23 @@
     });
   });
 
+  //const target_show = document.querySelector('')
 }
+
+$(function() {
+  $(window).scroll(function() {
+      var dy = $(this).scrollTop();
+      console.log(dy);
+      
+      $('#hero_title').css('background-position', '50% '+dy+'px');
+
+   
+
+
+      if (dy > 340) {
+          $('#bg2').css('background-position', '0 '+(dy-340)+'px');
+      } else {
+          $('#bg2').css('background-position', '0 0');
+      }
+  });
+});
