@@ -1,0 +1,97 @@
+@charset "UTF-8";
+#about_content{
+  max-width:1280px;
+  width:calc(100% - 40px); 
+  margin:0 auto 100px;
+  padding:50px 0 0 0;
+}
+#about_content .content{
+  margin:10px 0;
+  padding:20px;
+  background:#eacbc7;
+}
+
+#about_content :is(h3,h4){
+  font-size:clamp(1.25rem, 1.146rem + 0.52vw, 1.563rem);/*20-25*/
+}
+
+#about_content h3 ~ div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin:100px 0;
+}
+
+.text_area{
+  width:50%;
+  max-width:500px;
+  margin:0 10px;
+}
+.text_area p{
+  margin-top:10px;
+}
+.img_area {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  width:50%;
+  max-width:500px;
+  margin:0 10px;
+}
+.img_area img{
+  width:clamp(16.25rem, 13.333rem + 14.58vw, 25rem)/*260-400px*/;
+  height:clamp(16.25rem, 14.375rem + 9.38vw, 21.875rem)/*260-400px*/;
+  object-fit: none;
+  border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
+}
+.img_area .about_img1{
+  border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
+}
+.img_area .about_img2{
+  border-radius: 80% 30% 50% 50%/50%;
+}
+.img_area .about_img3{
+  border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+  object-fit: cover;
+}
+.img_area .about_img4{
+  object-fit: cover;
+  object-position: 50% 100%
+}
+
+
+.about_link_outer{
+  margin:20px 0;
+}
+.about_link_instagram{
+  background-color:hsla(304,98%,42%,1);
+  background-image:
+  radial-gradient(at 20% 5%, hsla(259,95%,60%,1) 0px, transparent 50%),
+  radial-gradient(at 88% 8%, hsla(303,100%,41%,1) 0px, transparent 50%),
+  radial-gradient(at 87% 72%, hsla(335,100%,50%,1) 0px, transparent 50%),
+  radial-gradient(at 52% 59%, hsla(28,100%,50%,1) 0px, transparent 50%),
+  radial-gradient(at 20% 81%, hsla(50,100%,50%,1) 0px, transparent 50%);
+}
+@media (max-width: 768px) {  
+  #about_content {
+    margin: 0 auto 30px;
+    padding: 30px 0 0 0;
+  }
+  #about_content h3 ~ div{
+    flex-direction: column;
+    margin:30px 0 50px;
+  }
+  .text_area{
+    width:100%;
+  }
+  .text_area p{
+    margin-top:10px;
+  }
+  .img_area {
+    width:100%;
+    max-width:500px;
+    margin:10px 0;
+  }
+
+
+}
